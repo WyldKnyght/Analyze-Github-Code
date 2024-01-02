@@ -47,5 +47,4 @@ def scrap_repo(github_owner, github_repo_name, llm_token):
             code_list.append(text)
 
     logger.info("Summarizing all code")
-    summary = get_summary.summarize_repo(code_list)
-    return summary
+    return get_summary.summarize_repo(code_list)
